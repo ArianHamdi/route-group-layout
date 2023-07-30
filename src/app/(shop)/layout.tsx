@@ -1,18 +1,10 @@
-import '../globals.css'
+import "../globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="shop-layout">
-          <h1>Product layout</h1>
-          {children}
-        </div>
-      </body>
-    </html>
+    <div className="shop-layout">
+      <h1>Shop layout</h1>
+      {children}
+    </div>
   );
 }
